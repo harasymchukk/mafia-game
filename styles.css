@@ -1,0 +1,94 @@
+/* Загальний стиль */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Поле введення */
+input {
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Кнопка */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 75, 43, 0.6);
+}
+
+/* Контейнер для ролей */
+#rolesContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Картки ролей */
+.role-card {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #23395d, #1e3c72);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 160px;
+    transition: transform 0.2s;
+}
+
+.role-card:hover {
+    transform: scale(1.05);
+}
+
+/* Зображення ролей */
+.role-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/* Заголовок ролі */
+.role-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.role-card p {
+    font-size: 16px;
+    font-weight: bold;
+}
